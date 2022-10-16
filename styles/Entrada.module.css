@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Neutral Face";
+}
+.loadingScreen {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.loadingSection {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSection .title {
+  margin: 0px 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.loadingSection .bracket {
+  font-size: 40px;
+  margin: 0px 30px;
+  font-family: "Kenoky";
+}
+#loader {
+  font-size: 40px;
+  font-family: "Kenoky";
+}
+.loadingImagesContainer {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: min-content;
+}
+.loadingImages {
+  width: max-content;
+  height: max-content;
+  margin: 0px 60px;
+  animation: sliding 15s infinite linear;
+}
+
+/* animation sliding  */
+@keyframes sliding {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+.loadingImages img {
+  height: 100px;
+  margin: 10px 25px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.bottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.bottomSection .bottomLine {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/* welcome screen  */
+
+.welcomeScreen {
+  padding: 50px;
+  padding-top: 20px;
+}
+.welcomeScreen h1 {
+  font-family: "Neutral Face";
+  font-size: 150px;
+  right: 0;
+  text-align: right;
+}
+span {
+  display: block;
+  overflow: hidden;
+}
